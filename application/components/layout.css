@@ -1,0 +1,46 @@
+body {
+  font-size: 20px;
+}
+.title__text {
+  text-align: center;
+}
+.commits__array__list {
+  list-style-type: none;
+}
+.commits__pagination {
+  text-align: center;
+}
+.form-name__in {
+  width: 100%;
+}
+.form-name__in__text {
+  width: 40%;
+}
+.form-text__in {
+  width: 100%;
+}
+.form-text__in__text {
+  width: 100%;
+}
+.commits {
+  padding-bottom: 100px;
+}
+.commits__form__btn {
+  margin-top: 2%;
+  text-align: center;
+}
+#comments {
+  position: relative;
+}
+.btn__edit {
+  position: absolute;
+  right: 5%;
+}
+.btn__del {
+  position: absolute;
+  right: 0;
+}
+.edit__text {
+  margin-top: 2%;
+  width: 100%;
+}

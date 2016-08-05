@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head><title>Guestbook</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="styleSheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet" type="text/css">
+    <link rel="styleSheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+</head>
+<body>
+<header class="title"><h1 class="title__text text-uppercase">Гостевая книга</h1></header>
+<div class="container-fluid">
+    <div class="col-md-offset-2"></div>
+    <div class="col-md-8 col-md-offset-2 commits">
+        <div class="commits__array">
+            <ul id="comments" class="commits__array__list"></ul>
+        </div>
+        <nav class="commits__pagination">
+            <ul id="pagination"></ul>
+        </nav>
+        <div class="commits__form">
+            <form id="myForm" class="form-horizontal">
+                <div class="control-group commits__form__el form-name"><label for="inputName"
+                                                                              class="control-label form-name__title">Как
+                    Вас зовут?</label>
+                    <div class="controls form-name__in"><input type="text" id="inputName" placeholder="Имя"
+                                                               class="form-name__in__text"></div>
+                </div>
+                <div class="control-group commits__form__el form-text"><label for="inputText"
+                                                                              class="control-label form-text__title">Ваш
+                    отзыв</label>
+                    <div class="controls form-text__in"><textarea id="inputText" rows="5" placeholder="Текст"
+                                                                  class="form-text__in__text"></textarea></div>
+                </div>
+                <div class="control-group commits__form__btn">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-primary commits__form__btn__sign">Оставить отзыв</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../components/bootstrap/js/bootstrap.min.js"></script>
+<script src="../components/commits/commits.js"></script>
+</body>
+</html>

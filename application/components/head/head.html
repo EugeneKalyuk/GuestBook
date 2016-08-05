@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="styleSheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="styleSheet" href="/bootstrap/css/bootstrap-theme.css">
+    <link rel="styleSheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet" type="text/css">
+    <link rel="styleSheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>$(document).ready(function () {
+    $('.menu-trigger').click(function () {
+        $('nav ul').slideToggle(500);
+    })
+    $(window).resize(function () {
+        if ($(window).width() > 500) {
+            $('nav ul').removeAttr('style');
+        }
+    });
+});</script>
+<script>$(document).ready(function () {
+    $('.nav__list__item__link_after').click(function () {
+        $('.sub-menu').slideToggle(500);
+    })
+    $(window).resize(function () {
+        if ($(window).width() > 500) {
+            $('.sub-menu').removeAttr('style');
+        }
+    });
+});</script>
+<script>$(document).ready(function () {
+    $('.sub-menu__item__link_after').click(function () {
+        $('.news-menu').slideToggle(500);
+    })
+    $(window).resize(function () {
+        if ($(window).width() > 500) {
+            $('.news-menu').removeAttr('style');
+        }
+    });
+});</script>
+<script src="/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.container-fluid
+    .col-md-offset-2
+    .col-md-8.col-md-offset-2.commits
+        .commits__array
+            ul.commits__array__list#comments
+
+        nav.commits__pagination
+            ul(class='pagination' id='page')
+
+        .commits__form
+            form(class="form-horizontal" id="myForm")
+                .control-group.commits__form__el.form-name
+                    label(class="control-label form-name__title" for="inputName") Как Вас зовут?
+                    .controls.form-name__in
+                        input(type="text" id="inputName" placeholder="Имя" class="form-name__in__text")
+                .control-group.commits__form__el.form-text
+                    label(class="control-label form-text__title" for="inputText" ) Ваш отзыв
+                    .controls.form-text__in
+                        textarea(id="inputText" rows="5" placeholder="Текст" class="form-text__in__text")
+                .control-group.commits__form__btn
+                    .controls
+                        button(type="submit" class="btn btn-primary commits__form__btn__sign") Оставить отзыв
+
+
