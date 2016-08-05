@@ -6,4 +6,5 @@ Code fore page with commit
 QUICK START
 -----------
 
-dircd 'yourDirectory/gulp'
+dir
+cd 'yourDirectory/gulp'
